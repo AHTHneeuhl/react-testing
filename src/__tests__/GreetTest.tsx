@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import Greet from "./Greet";
+import Greet from "../components/Greet";
 
 describe("Greet", () => {
-  it("renders correctly", () => {
+  test("renders correctly", () => {
     render(<Greet />);
     const textElement = screen.getByText(/hello/i);
     expect(textElement).toBeInTheDocument();
@@ -10,7 +10,7 @@ describe("Greet", () => {
 });
 
 describe("Nested", () => {
-  it("renders with name", () => {
+  test("renders with name", () => {
     render(<Greet name="Arya" />);
     const textElement = screen.getByText("Hello Arya");
     expect(textElement).toBeInTheDocument();
