@@ -9,6 +9,9 @@ describe("Application", () => {
     });
     expect(nameElement).toBeInTheDocument();
 
+    const namePlaceholderElement = screen.getByPlaceholderText("Fullname");
+    expect(namePlaceholderElement).toBeInTheDocument();
+
     const nameLabelElement = screen.getByLabelText("Name", {
       selector: "input",
     });
