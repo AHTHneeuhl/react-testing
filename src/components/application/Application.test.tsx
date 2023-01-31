@@ -54,5 +54,8 @@ describe("Application", () => {
 
     const imageAltElement = screen.getByAltText("a person with laptop");
     expect(imageAltElement).toBeInTheDocument();
+
+    const spanElement = screen.getByTitle("close");
+    expect(spanElement).toBeInTheDocument();
   });
 });
