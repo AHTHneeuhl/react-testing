@@ -46,13 +46,13 @@ describe("Application", () => {
     });
     expect(sectionHeading).toBeInTheDocument();
 
-    const paragraphElement = screen.getByText("All fields are mandatory!");
+    const paragraphElement = screen.getByText(/fields/i);
     expect(paragraphElement).toBeInTheDocument();
 
     const nameValueElement = screen.getByDisplayValue("Bruce Wayne");
     expect(nameValueElement).toBeInTheDocument();
 
-    const imageAltElement = screen.getByAltText("a person with laptop");
+    const imageAltElement = screen.getByAltText(/Laptop/i);
     expect(imageAltElement).toBeInTheDocument();
 
     const spanElement = screen.getByTitle("close");
