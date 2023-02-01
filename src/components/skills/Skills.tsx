@@ -15,7 +15,7 @@ export const Skills = (props: SkillsProps) => {
     <>
       <ul>
         {skills.map((skill) => {
-          return <li key={skill}>skill</li>;
+          return <li key={skill}>{skill}</li>;
         })}
       </ul>
       {isLoggedIn ? (
