@@ -1,15 +1,15 @@
-import { ThemeProvider } from "@emotion/react";
-import { createTheme, CssBaseline } from "@mui/material";
+import { ThemeProvider } from '@emotion/react'
+import { createTheme, CssBaseline } from '@mui/material'
 
 type AppProvidersProps = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 const theme = createTheme({
   palette: {
-    mode: "light",
+    mode: 'light',
   },
-});
+})
 
 export const AppProviders = ({ children }: AppProvidersProps) => {
   return (
@@ -17,5 +17,5 @@ export const AppProviders = ({ children }: AppProvidersProps) => {
       <CssBaseline />
       {children}
     </ThemeProvider>
-  );
-};
+  )
+}
