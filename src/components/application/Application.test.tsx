@@ -60,5 +60,7 @@ describe("Application", () => {
 
     const customElement = screen.getByTestId("custom-element");
     expect(customElement).toBeInTheDocument();
+
+    expect(submitButtonElement).toBeDisabled();
   });
 });
